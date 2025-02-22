@@ -92,7 +92,7 @@ function level(event) {
     }
         localStorage.setItem('time_start',performance.now())
         localStorage.setItem('soduko_level',soduko_level)  // Saving the variable into the browser memory.
- }
+}
 
 
 function cleaningByLevel(localStorage){
@@ -133,10 +133,10 @@ function cleaningByLevel(localStorage){
     for(let i=0; i < sMat.length; i++ ){
         for(let j=0; j<sMat[i].length; j++){
             let disableNum = document.getElementById("cell-"+(i*9+j)).value
-           if (disableNum <= 9 && disableNum >=1) {
+        if (disableNum <= 9 && disableNum >=1) {
                 document.getElementById("cell-"+(i*9+j)).disabled = true;
                 document.getElementById("cell-"+(i*9+j)).style.backgroundColor = '#E2E2E2' 
-           }
+            }
         }
     }
 }
